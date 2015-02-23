@@ -1,0 +1,37 @@
+code,fr
+1,Manufacture
+2,Construction
+3,Commerce
+4,Transports
+5,Hospitalité
+6,Information
+7,Finance
+8,Immobilier
+9,Sciences & techniques
+10,Admin
+11,Admin publique
+12,Enseignement
+13,Santé & social
+14,Arts
+15,Autres services
+16,Industrie manufacturière
+17,Construction
+18,Commerce; réparation d’automobiles
+19,Transports et entreposage
+20,Hébergement et restauration
+21,Information et communication
+22,Activités financières et d'assurances
+23,Activités immobilières
+24,"Activ. spécialisées, scientifiques et techniques"
+25,Activités de services admin. et de soutien
+26,"Admin. publique, défense; sécurité sociale"
+27,Enseignement
+28,Santé humaine et action sociale 
+29,"Arts, spectacles et activités récréatives"
+30,Autres activités de services
+title,
+descr,"Salaire mensuel médian brut par secteur économique et par sexe, en équivalent plein temps. La taille des bulles est proportionnelle au nombre d'emplois par secteur économique. "
+ylab,salaire médian brut des hommes (CHF)
+xlab,salaire des femmes en % du salaire des hommes
+ztool,Nombre d'emploi total
+source,source: Office fédéral de la statistique
