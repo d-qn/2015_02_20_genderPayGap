@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<title>swissinfo.ch</title>
+
+<style type="text/css">
+
+/*  #######   rcharts styling ########*/
+svg text {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ensure data labels are not visible over the tooltip: 
+http://stackoverflow.com/questions/15130311/highcharts-labels-visible-over-tooltip */
+
+.label { 
+  z-index: 1 !important;
+}
+
+.highcharts-tooltip span {
+  background-color:white;
+  opacity:1;
+  z-index:9999 !important;
+  border-radius: 3px;
+}
+
+.tooltip {
+  padding:5px;
+}
+
+    
+/*  #######   header and footer styling   ########*/  
+
+body, h1, h2, h3, h4, h5, h6, td {
+   font-family: 'Open Sans', sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 2px;
+}
+
+#cite {
+    font-size: 0.5em; color: #B8B8B8; text-align: right; margin-top:1px; margin-right:3px; padding-bottom: 5px;
+}
+#cite a { text-decoration: none; color: #821122; }
+    
+.descr {
+ font-size: 0.8em; margin-left:1px; color: #707070;
+}
+    
+    
+h1 {
+   font-size:2em;
+}
+
+h2 {
+   font-size:1.5em;
+   font-weight: lighter;
+   line-height: 115%;
+}
+
+h3 {
+   font-size:1.2em
+}
+
+h4 {
+   font-size:1.1em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+    
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+
+<h2> Empleo y salario mensual suizo por sector y sexo </h2>
+<div class="descr"> INTERACTIVO: media salarial mensual (bruto) por sector económico y sexo en 2012. El tamaño de los círculos es proporcional al total de empleos en el sector, en 2014. Los salarios brutos equivalen a una ocupación al 100% e incluyen eventuales primas financieras. </div>
+    <div id = 'chart8a9640f66681' class = 'rChart highcharts'></div>         <script type='text/javascript'>     (function($){         $(function () {             var chart = new Highcharts.Chart({  "dom": "chart8a9640f66681", "width":            800, "height":            400, "credits": {  "href": null, "text": null  }, "exporting": {  "enabled": false  }, "title": {  "text": null  }, "yAxis": [  {  "title": {  "text": "media salarial mensual masculina (CHF)", "style": {  "fontWeight": "bold"  }  }, "labels": {  "format": "{value}"  }, "floor":           3500, "ceiling":          11000  }  ], "series": [  {  "data": [  {  "x":             76, "y":           8555, "z": "339201", "name": "Ciencia y tecnología", "color": "#3a9736"  }  ], "name": "Activ. Especializadas"  }, {  "data": [  {  "x":           67.6, "y":          10693, "z": "231215", "name": "Finanzas", "color": "#996699"  }  ], "name": "Actividad financiera y aseguradoras"  }, {  "data": [  {  "x":           82.5, "y":           7671, "z": "33249", "name": "Bienes inmuebles", "color": "#ac673e"  }  ], "name": "Actividad inmobiliaria"  }, {  "data": [  {  "x":           80.9, "y":           5570, "z": "177281", "name": "Admin.", "color": "#333366"  }  ], "name": "Actividades administrativas"  }, {  "data": [  {  "x":           86.6, "y":           8450, "z": "186592", "name": "Admin. Pública", "color": "#999966"  }  ], "name": "Admin. Pública, defensa, seguridad social"  }, {  "data": [  {  "x":           86.7, "y":           6408, "z": "51440", "name": "Artes", "color": "#368596"  }  ], "name": "Artes, espectáculos y recreación"  }, {  "data": [  {  "x":             77, "y":           6047, "z": "624439", "name": "Comercio", "color": "#669999"  }  ], "name": "Comercio y reparación de automóviles"  }, {  "data": [  {  "x":           90.4, "y":           6078, "z": "336959", "name": "Construcción", "color": "#666699"  }  ], "name": "Construcción"  }, {  "data": [  {  "x":           90.6, "y":           9068, "z": "291450", "name": "Enseñanza", "color": "#666633"  }  ], "name": "Enseñanza"  }, {  "data": [  {  "x":           92.2, "y":           4444, "z": "210947", "name": "Hotelería", "color": "#336666"  }  ], "name": "Hospedaje y restauración"  }, {  "data": [  {  "x":           79.2, "y":           6667, "z": "666611", "name": "Manufactura", "color": "#ab3d3f"  }  ], "name": "Industria manufacturera"  }, {  "data": [  {  "x":           76.2, "y":           9000, "z": "146392", "name": "Información", "color": "#366096"  }  ], "name": "Información y comunicación"  }, {  "data": [  {  "x":             72, "y":           7233, "z": "99963", "name": "Otros servicios", "color": "#996666"  }  ], "name": "Otras actividades de servicios"  }, {  "data": [  {  "x":           84.6, "y":           7118, "z": "566254", "name": "Salud y s. social", "color": "#89a23a"  }  ], "name": "Salud humana y acción social"  }, {  "data": [  {  "x":           93.9, "y":           6222, "z": "216972", "name": "Transportes", "color": "#663333"  }  ], "name": "Transportes y almacenaje"  }  ], "chart": {  "zoomType": "xy", "type": "bubble", "height":            400, "renderTo": "chart8a9640f66681"  }, "plotOptions": {  "bubble": {  "dataLabels": {  "enabled": true, "zIndex":              1, "verticalAlign": "middle", "style": {  "textShadow": "none", "fontSize": "0.6em"  }, "color": "black", "useHTML": true, "formatter":  function() { return this.point.name; }   }, "minSize":             15, "maxSize":             75  }  }, "tooltip": {  "shadow": false, "useHTML": true, "backgroundColor": "rgba(255,255,255,1)", "formatter":  function() {return '<h5>' + this.series.name + '</h5><div class=\"tooltop\" style=\"color:#686868;font-size:0.8em\">media salarial mensual masculina (CHF): <b>' + this.y + '</b><br/>salario femenino en %, con respecto al masculino: <b>' + this.x + '</b><br/>Número de empleos: ' + this.point.z +'</div>';}   }, "xAxis": [  {  "title": {  "text": "salario femenino en %, con respecto al masculino", "style": {  "fontWeight": "bold"  }  }, "labels": {  "format": "{value}%"  }, "min":             65, "max":            100, "lineColor": [  "#FF0000"  ]  }  ], "legend": {  "enabled": false  }, "id": "chart8a9640f66681"  });         });     })(jQuery); </script>
+
+<!-- Source -->
+<div id="cite"> fuente: Oficina Federal de Estadísticas | Duc-Quang Nguyen | swissinfo.ch </div>
+
+
+</body>
+</html>

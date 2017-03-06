@@ -1,16 +1,16 @@
 nom court,Nom,Femmes,Hommes,% du salaire hommes,Nombre hommes,nombre femmes,ratio femmes/hommes,total job
 Manufacture,Industrie manufacturière,5280,6667,79.2,476.7,189.9,28,666611
-Construction,Construction,5494,6078,90.4,302.5,34.5,10,336959
-Commerce,Commerce; réparation d’automobiles,4656,6047,77.0,315.5,308.9,49,624439
+Construction,Construction,5797,6088,95.2201051248,302.5,34.5,10,336959
+Commerce,Commerce; réparation d’automobiles,4656,6047,77,315.5,308.9,49,624439
 Transports,Transports et entreposage,5844,6222,93.9,157.8,59.2,27,216972
-Hospitalité,Hébergement et restauration,4095,4444,92.2,94.2,116.7,55,210947
+Hospitalité,Hébergement et restauration,4216,4480,94.1071428571,94.2,116.7,55,210947
 Information,Information et communication,6857,9000,76.2,106.8,39.6,27,146392
-Finance,Activités financières et d'assurances,7231,10693,67.6,133.1,98.1,42,231215
+Finance,Activités financières et d'assurances,7750,11148,69.5191962684,133.1,98.1,42,231215
 Immobilier,Activités immobilières,6332,7671,82.5,14.9,18.4,55,33249
-Sciences,"Activ. spécialisées, scientifiques et techniques",6500,8555,76.0,199,140.2,41,339201
-Admin,Activités de services admin. et de soutien,4504,5570,80.9,97.6,79.6,45,177281
+Sciences,"Activ. spécialisées, scientifiques et techniques",6500,8555,76,199,140.2,41,339201
+Admin,Activités de services admin. et de soutien,4834,5468,88.405267008,97.6,79.6,45,177281
 Admin publique,"Admin. publique, défense; sécurité sociale",7320,8450,86.6,100.4,86.2,46,186592
 Enseignement,Enseignement,8219,9068,90.6,115.2,176.2,60,291450
 Santé & social,Santé humaine et action sociale ,6018,7118,84.6,130,436.2,77,566254
 Arts,"Arts, spectacles et activités récréatives",5553,6408,86.7,27.1,24.3,47,51440
-autres services,Autres activités de services,5209,7233,72.0,35.2,64.7,65,99963
+autres services,Autres activités de services,5209,7233,72,35.2,64.7,65,99963

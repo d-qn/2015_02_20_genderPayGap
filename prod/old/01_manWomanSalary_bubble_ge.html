@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<title>swissinfo.ch</title>
+
+<style type="text/css">
+
+/*  #######   rcharts styling ########*/
+svg text {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ensure data labels are not visible over the tooltip: 
+http://stackoverflow.com/questions/15130311/highcharts-labels-visible-over-tooltip */
+
+.label { 
+  z-index: 1 !important;
+}
+
+.highcharts-tooltip span {
+  background-color:white;
+  opacity:1;
+  z-index:9999 !important;
+  border-radius: 3px;
+}
+
+.tooltip {
+  padding:5px;
+}
+
+    
+/*  #######   header and footer styling   ########*/  
+
+body, h1, h2, h3, h4, h5, h6, td {
+   font-family: 'Open Sans', sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 2px;
+}
+
+#cite {
+    font-size: 0.5em; color: #B8B8B8; text-align: right; margin-top:1px; margin-right:3px; padding-bottom: 5px;
+}
+#cite a { text-decoration: none; color: #821122; }
+    
+.descr {
+ font-size: 0.8em; margin-left:1px; color: #707070;
+}
+    
+    
+h1 {
+   font-size:2em;
+}
+
+h2 {
+   font-size:1.5em;
+   font-weight: lighter;
+   line-height: 115%;
+}
+
+h3 {
+   font-size:1.2em
+}
+
+h4 {
+   font-size:1.1em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+    
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+
+<h2> Beschäftigung und Schweizer Monatslöhne nach Branche und Geschlecht </h2>
+<div class="descr"> INTERAKTIV: Brutto-Medianlohn/Monat nach Wirtschaftszweigen und Geschlecht im Jahr 2012. Die Grösse der Kreise ist proportional zur Gesamtzahl der Arbeitsplätze nach Wirtschaftsbereichen im Jahr 2014. Die Bruttolöhne entsprechen Vollzeitstellen und beinhalten Boni und Prämien. </div>
+    <div id = 'chart8a967cd5f17a' class = 'rChart highcharts'></div>         <script type='text/javascript'>     (function($){         $(function () {             var chart = new Highcharts.Chart({  "dom": "chart8a967cd5f17a", "width":            800, "height":            400, "credits": {  "href": null, "text": null  }, "exporting": {  "enabled": false  }, "title": {  "text": null  }, "yAxis": [  {  "title": {  "text": "Medianlohn/Monat Männer (CHF)", "style": {  "fontWeight": "bold"  }  }, "labels": {  "format": "{value}"  }, "floor":           3500, "ceiling":          11000  }  ], "series": [  {  "data": [  {  "x":           90.4, "y":           6078, "z": "336959", "name": "Bau", "color": "#666699"  }  ], "name": "Bau"  }, {  "data": [  {  "x":           90.6, "y":           9068, "z": "291450", "name": "Bildung", "color": "#666633"  }  ], "name": "Bildung"  }, {  "data": [  {  "x":           67.6, "y":          10693, "z": "231215", "name": "Finanzbranche", "color": "#996699"  }  ], "name": "Finanz- und Versicherungsdienstleistungen"  }, {  "data": [  {  "x":           93.9, "y":           6222, "z": "216972", "name": "Transport/Logistik", "color": "#663333"  }  ], "name": "Förder- und Lagertechnik"  }, {  "data": [  {  "x":             76, "y":           8555, "z": "339201", "name": "Wissenschaft & Technik", "color": "#3a9736"  }  ], "name": "Freiberufliche, wissenschaftliche und technische Tätigkeiten"  }, {  "data": [  {  "x":           82.5, "y":           7671, "z": "33249", "name": "Immobilien", "color": "#ac673e"  }  ], "name": "Grundstücks- und Wohnungswesen"  }, {  "data": [  {  "x":             77, "y":           6047, "z": "624439", "name": "Handel", "color": "#669999"  }  ], "name": "Handel und Autoreparaturen"  }, {  "data": [  {  "x":           76.2, "y":           9000, "z": "146392", "name": "Informatik/IT", "color": "#366096"  }  ], "name": "Information und Kommunikation"  }, {  "data": [  {  "x":           86.7, "y":           6408, "z": "51440", "name": "Künste", "color": "#368596"  }  ], "name": "Kunst, Unterhaltung und Erholung"  }, {  "data": [  {  "x":           79.2, "y":           6667, "z": "666611", "name": "Herstellung", "color": "#ab3d3f"  }  ], "name": "Produktionsindustrie"  }, {  "data": [  {  "x":             72, "y":           7233, "z": "99963", "name": "Andere Dienstleistungen", "color": "#996666"  }  ], "name": "Sonstige Dienstleistungen"  }, {  "data": [  {  "x":           84.6, "y":           7118, "z": "566254", "name": "Gesundheit & Soziales", "color": "#89a23a"  }  ], "name": "Sozial- und Gesundheitsarbeit"  }, {  "data": [  {  "x":           92.2, "y":           4444, "z": "210947", "name": "Gastronomie", "color": "#336666"  }  ], "name": "Unterkunft und Verpflegung"  }, {  "data": [  {  "x":           80.9, "y":           5570, "z": "177281", "name": "Verwaltung", "color": "#333366"  }  ], "name": "Unterstützende Dienste"  }, {  "data": [  {  "x":           86.6, "y":           8450, "z": "186592", "name": "Öffentliche Verwaltung", "color": "#999966"  }  ], "name": "Verteidigung und soziale Sicherheit"  }  ], "chart": {  "zoomType": "xy", "type": "bubble", "height":            400, "renderTo": "chart8a967cd5f17a"  }, "plotOptions": {  "bubble": {  "dataLabels": {  "enabled": true, "zIndex":              1, "verticalAlign": "middle", "style": {  "textShadow": "none", "fontSize": "0.6em"  }, "color": "black", "useHTML": true, "formatter":  function() { return this.point.name; }   }, "minSize":             15, "maxSize":             75  }  }, "tooltip": {  "shadow": false, "useHTML": true, "backgroundColor": "rgba(255,255,255,1)", "formatter":  function() {return '<h5>' + this.series.name + '</h5><div class=\"tooltop\" style=\"color:#686868;font-size:0.8em\">Medianlohn/Monat Männer (CHF): <b>' + this.y + '</b><br/>Löhne Frauen in % der Männerlöhne: <b>' + this.x + '</b><br/>Anzahl Beschäftigte: ' + this.point.z +'</div>';}   }, "xAxis": [  {  "title": {  "text": "Löhne Frauen in % der Männerlöhne", "style": {  "fontWeight": "bold"  }  }, "labels": {  "format": "{value}%"  }, "min":             65, "max":            100, "lineColor": [  "#FF0000"  ]  }  ], "legend": {  "enabled": false  }, "id": "chart8a967cd5f17a"  });         });     })(jQuery); </script>
+
+<!-- Source -->
+<div id="cite"> Quelle: Bundesamt für Statistik | Duc-Quang Nguyen | swissinfo.ch </div>
+
+
+</body>
+</html>

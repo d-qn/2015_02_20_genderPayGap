@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<title>swissinfo.ch</title>
+
+<style type="text/css">
+
+/* ensure data labels are not visible over the tooltip:
+http://stackoverflow.com/questions/15130311/highcharts-labels-visible-over-tooltip */
+.label {
+  z-index: 1 !important;
+}
+
+.highcharts-tooltip span {
+  background-color:white;
+  opacity:1;
+  z-index:9999 !important;
+  border-radius: 3px;
+}
+
+.tooltip {
+  padding:5px;
+}
+
+
+/*  #######   header and footer styling   ########*/
+
+body, h1, h2, h3, h4, h5, h6, .descr, td, table {
+   font-family: 'Open Sans', sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin:3px 4px 3px 5px;
+}
+
+#cite {
+    font-size: 0.5em; color: #B8B8B8; text-align: right; margin-top:1px; margin-right:10px; padding-bottom: 3px;
+}
+#cite a { text-decoration: none; color: #821122; }
+
+.descr {
+ font-size: 0.8em; color: #707070;
+}
+
+h1 {
+   font-size:2em;
+}
+
+h2 {
+   font-size:1.5em;
+   font-weight: lighter;
+   line-height: 115%;
+}
+
+h3 {
+   font-size:1.2em
+}
+
+h4 {
+   font-size:1.1em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+table, td, th {
+  border: none;
+  font-size:0.92em;
+  color : #4d4d4d;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+<script src="js/exporting.js"></script>
+<script src="js/heatmap.js"></script>
+<h2> Inégalité salariale entre les sexes: larges disparités selon les branches économiques </h2>
+<div class="descr"> INTERACTIF: Salaire mensuel médian brut par secteur économique et par sexe en 2012/ 2014. La taille des bulles est proportionnelle au nombre d'emplois total par secteur économique en 2014. Les salaires bruts correspondent à des équivalents plein temps et tiennent comptent d'éventuelles primes financières. </div>
+    <div id = 'chart4f533e8b3101' class = 'rChart highcharts'></div>         <script type='text/javascript'>     (function($){         $(function () {             var chart = new Highcharts.Chart({  "dom": "chart4f533e8b3101", "width":            800, "height":            400, "credits": {  "href": null, "text": null  }, "exporting": {  "enabled": false  }, "title": {  "text": null  }, "yAxis": [  {  "title": {  "text": "salaire mensuel médian des hommes (CHF)", "style": {  "fontWeight": "bold"  }  }, "labels": {  "format": "{value}"  }, "floor":           3500, "ceiling":          11000  }  ], "series": [  {  "data": [  {  "x":           88.4, "y": 5468, "z": 177281, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Activités de services admin. et de soutien*</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>5468</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>4834</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>88.4</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>177281</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>45%</strong></td></tr></div></table>"  }  ], "name": "Admin."  }, {  "data": [  {  "x":           86.6, "y": 8450, "z": 186592, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Admin. publique, défense, sécurité sociale</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>8450</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>7320</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>86.6</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>186592</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>46%</strong></td></tr></div></table>"  }  ], "name": "Admin. publique"  }, {  "data": [  {  "x":           86.7, "y": 6408, "z": 51440, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Arts, spectacles et activités récréatives</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>6408</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>5553</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>86.7</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>51440</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>47%</strong></td></tr></div></table>"  }  ], "name": "Arts"  }, {  "data": [  {  "x":             72, "y": 7233, "z": 99963, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Autres activités de services</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>7233</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>5209</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>72</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>99963</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>65%</strong></td></tr></div></table>"  }  ], "name": "Autres services"  }, {  "data": [  {  "x":             77, "y": 6047, "z": 624439, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Commerce et réparation d’automobiles</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>6047</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>4656</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>77</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>624439</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>49%</strong></td></tr></div></table>"  }  ], "name": "Commerce"  }, {  "data": [  {  "x":           95.2, "y": 6088, "z": 336959, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Construction*</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>6088</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>5797</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>95.2</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>336959</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>10%</strong></td></tr></div></table>"  }  ], "name": "Construction"  }, {  "data": [  {  "x":           90.6, "y": 9068, "z": 291450, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Enseignement</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>9068</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>8219</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>90.6</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>291450</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>60%</strong></td></tr></div></table>"  }  ], "name": "Enseignement"  }, {  "data": [  {  "x":           69.5, "y": 11148, "z": 231215, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Activités financières et d'assurances*</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>11148</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>7750</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>69.5</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>231215</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>42%</strong></td></tr></div></table>"  }  ], "name": "Finance"  }, {  "data": [  {  "x":           94.1, "y": 4480, "z": 210947, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Hébergement et restauration*</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>4480</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>4216</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>94.1</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>210947</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>55%</strong></td></tr></div></table>"  }  ], "name": "Hospitalité"  }, {  "data": [  {  "x":           82.5, "y": 7671, "z": 33249, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Activités immobilières</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>7671</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>6332</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>82.5</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>33249</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>55%</strong></td></tr></div></table>"  }  ], "name": "Immobilier"  }, {  "data": [  {  "x":           76.2, "y": 9000, "z": 146392, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Information et communication</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>9000</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>6857</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>76.2</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>146392</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>27%</strong></td></tr></div></table>"  }  ], "name": "Information"  }, {  "data": [  {  "x":           79.2, "y": 6667, "z": 666611, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Industrie manufacturière</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>6667</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>5280</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>79.2</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>666611</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>28%</strong></td></tr></div></table>"  }  ], "name": "Manufacture"  }, {  "data": [  {  "x":           84.6, "y": 7118, "z": 566254, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Santé humaine et action sociale</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>7118</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>6018</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>84.6</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>566254</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>77%</strong></td></tr></div></table>"  }  ], "name": "Santé & social"  }, {  "data": [  {  "x":             76, "y": 8555, "z": 339201, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Activ. spécialisées, scientifiques et techniques</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>8555</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>6500</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>76</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>339201</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>41%</strong></td></tr></div></table>"  }  ], "name": "Sciences & techniques"  }, {  "data": [  {  "x":           93.9, "y": 6222, "z": 216972, "name": "<table cellpadding=\"1\" style=\"line-height:1.1\"><div class=\"tooltip\" style=\"color:#686868;font-size:0.8em\"><tr><td colspan=\"3\"><strong>Transports et entreposage</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">salaire mensuel médian des hommes (CHF)</td><td><strong>6222</strong></td></tr><tr><td colspan=\"2\">salaire mensuel médian des femmes (CHF)</td><td><strong>5844</strong></td></tr><tr><td colspan=\"2\">salaire féminin en % du salaire masculin</td><td><strong>93.9</strong></td></tr><tr><td colspan=\"3\">&nbsp;</td></tr><tr><td colspan=\"2\">nombre d'emplois</td><td>216972</td></tr><tr><td colspan=\"2\">proportion de femmes dans ce secteur</td><td><strong>27%</strong></td></tr></div></table>"  }  ], "name": "Transports"  }  ], "colors": [ "#ab3d3f", "#666699", "#669999", "#663333", "#336666", "#366096", "#996699", "#ac673e", "#3a9736", "#333366", "#999966", "#666633", "#89a23a", "#368596", "#996666" ], "chart": {  "zoomType": "xy", "type": "bubble", "height":            400, "renderTo": "chart4f533e8b3101"  }, "plotOptions": {  "bubble": {  "dataLabels": {  "enabled": true, "verticalAlign": "middle", "style": {  "textShadow": "none", "fontSize": "0.6em"  }, "color": "black", "useHTML": true, "formatter":  function() { return this.series.name; }   }, "minSize":             20, "maxSize":             84  }  }, "tooltip": {  "formatter":  function() { return this.point.name; } , "useHTML": true, "borderWidth":              1, "style": {  "padding":              2  }  }, "xAxis": [  {  "title": {  "text": "salaire féminin en % du salaire masculin", "style": {  "fontWeight": "bold"  }  }, "labels": {  "format": "{value}%"  }, "min":             67, "max":            100, "lineColor": [  "#FF0000"  ]  }  ], "legend": {  "enabled": false  }, "id": "chart4f533e8b3101"  });         });     })(jQuery); </script>
+
+<!-- Source -->
+<div id="cite"> *salaires 2014 | source: Office fédéral de la statistique |  swissinfo.ch </div>
+
+
+</body>
+</html>
